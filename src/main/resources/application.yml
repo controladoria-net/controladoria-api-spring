@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: controladoria-api
+  config:
+    import: "classpath:prompts.yml"
+  ai:
+    google:
+      gemini:
+        api-key: ${GEMINI_API_KEY}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${COGNITO_ISSUER_URI}
+          jwk-set-uri: ${COGNITO_JWK_SET_URI}
+
+aws:
+  s3:
+    bucket-name: ${S3_BUCKET_NAME}
+    region: ${AWS_REGION}

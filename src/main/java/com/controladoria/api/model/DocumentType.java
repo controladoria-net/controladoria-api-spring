@@ -1,0 +1,15 @@
+package com.controladoria.api.model;
+
+public enum DocumentType {
+    CERTIFICADO_DE_REGULARIDADE,
+    CAEPF,
+    CNIS,
+    TERMO_DE_REPRESENTACAO,
+    PROCURACAO,
+    GPS_E_COMPROVANTE,
+    BIOMETRIA,
+    DOCUMENTO_IDENTIDADE,
+    COMPROVANTE_RESIDENCIA,
+    REAP,
+    OUTRO
+}
